@@ -4,20 +4,20 @@ public class PrimeNumber {
 	public static void main(String[] args) {
 		 int i,m=0;
 		 boolean flag=false;
-		  int n=13;//it is the number to be checked    
-		  m=n/2;      
-		  if(n==0||n==1){  
-		   System.out.println(n+" is not a prime number");      
+		  int num=13;//it is the number to be checked    
+		  m=num/2;      
+		  if(num==0||num==1){  
+		   System.out.println(num+" is not a prime number");      
 		  }else{  
 		   for(i=2;i<=m;i++){      
-		    if(n%i==0){      
-		     System.out.println(n+" is not a prime number");      
+		    if(num%i==0){      
+		     System.out.println(num+" is not a prime number");      
 		     flag=true;      
 		     break;      
 		    }      
 		   }      
 		   if(flag==false)  { 
-			   System.out.println(n+" is a prime number"); 
+			   System.out.println(num+" is a prime number"); 
 			   }  
 		  } 
 		
