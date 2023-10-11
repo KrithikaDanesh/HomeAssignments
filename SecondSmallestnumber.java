@@ -7,12 +7,15 @@ public class SecondSmallestnumber {
 		int num[]= {23,45,67,32,89,22};
 		Arrays.sort(num);
 		int len=num.length;
-		System.out.println("Length of the array"+" "+len);
-		for(int i=0;i<len;i++)
+		for(int i=1;i<len;i++)
 		{
-		System.out.println(num[i]);
+			//to find second smallest number even with duplicates in the array//
+			if(num[0]!=num[i]) {				
+		System.out.println("Second Smallest Number"+" "+num[i]);
+		break;
+			}
 		}
-		System.out.println("Second Smallest Number"+" "+num[len-5]);
+		
 	}
 
 }
